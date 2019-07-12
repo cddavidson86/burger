@@ -3,7 +3,7 @@ Burger Shop
 
 An app that shows the power of using Node, Express, handlebars and mySQL to allow the user to store information and use a click function to remove it.
 
-* Link: https://obscure-everglades-76700.herokuapp.com/
+* Link: https://sheltered-castle-45279.herokuapp.com/
 
 ##### Technologies Used
 * **JavaScript**
