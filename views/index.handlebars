@@ -73,6 +73,9 @@ $(function() {
 
     var eatenState = { devoured: false };
 
+    if ($("#ca").val().trim() === "") {
+      alert("Please enter a burger name!");
+    } else {
     var newBurger = {
       burger_name: $("#ca").val().trim()
     };
@@ -88,6 +91,7 @@ $(function() {
         location.reload();
       }
     );
+    };
   });
 });
 </script>
