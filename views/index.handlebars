@@ -9,7 +9,7 @@
         <p>
               {{burger_name}}
 
-              <button class="change-devoured" data-id="{{id}}" data-devoured="{{true}}">
+              <button class="change-devoured" data-id="{{id}}">
                 {{#unless devoured}}DEVOUR!{{/unless}}
               </button>
         </p>
@@ -32,26 +32,6 @@
   {{/each}}
 </ul>
 
-{{!-- <ul>
-  {{#each burgers}}
-  <li>
-    <p>
-      {{this.id}}. {{this.burger_name}}. {{this.devoured}}
-
-      <button data-planid="{{this.id}}" class="delplan">Delete Plan!</button>
-    </p>
-  </li>
-  {{/each}}
-</ul> --}}
-
-{{!-- <li>
-	{{name}}
-
-	<button class="change-devoured" data-id="{{id}}" data-newsleep="{{devoured}}">
-		{{#if sleep}}SLEEP TIME!{{else}}WAKE UP!{{/if}}
-	</button>
-
-</li> --}}
 
 <h2>Add a Burger</h2>
 <form class="create-form">
@@ -68,9 +48,8 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
   $(".change-devoured").on("click", function(event) {
-
+    event.preventDefault();
     var id = $(this).data("id");
-//  var newEatenState = $(this).data("devoured");
     var newEatenState = {
       devoured: true
     };

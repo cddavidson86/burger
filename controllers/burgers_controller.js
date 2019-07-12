@@ -43,7 +43,7 @@ router.put("/api/burgers/:id", function(req, res) {
       res.status(200).end();
     }
   });
-  console.log("objColVals", devoured);
+  // console.log("objColVals", devoured);
 });
 
 // Export routes for server.js to use.
