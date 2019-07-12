@@ -1,13 +1,31 @@
 body {
-    background-color: aqua;
-    color: white;
+    background-color: beige;
+    color: black;
 }
 
 h1 {
-    background-color: aqua;
+    background-color: black;
     color: white;
+    text-align: center;
 }
 
-#list {
-    background-color: blanchedalmond;
+li {
+    border-color: black;
+    border-style: solid;
+    height: 60px;
+    border-radius: 10px;
+    background-color: aqua;
+}
+
+#box {
+    float: left;
+}
+
+#box2 {
+    float: right;
+}
+
+#add {
+    align-content: center;
+    text-align: center;
 }
