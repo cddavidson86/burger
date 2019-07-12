@@ -9,7 +9,7 @@
         <p>
               {{burger_name}}
 
-              <button class="change-devoured" data-id="{{id}}" data-eaten="{{false}}">
+              <button class="change-devoured" data-id="{{id}}" data-devoured="{{true}}">
                 {{#unless devoured}}DEVOUR!{{/unless}}
               </button>
         </p>
@@ -68,14 +68,17 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
   $(".change-devoured").on("click", function(event) {
-    var id = $(this).data("id");
 
-    // var newEatenState = { devoured: true; };
+    var id = $(this).data("id");
+//  var newEatenState = $(this).data("devoured");
+    var newEatenState = {
+      devoured: true
+    };
 
     // Send the PUT request.
     $.ajax("/api/burgers/" + id, {
       type: "PUT",
-      data: true
+      data: newEatenState
     }).then(
       function() {
         console.log("changed eaten to true");
@@ -89,9 +92,10 @@ $(function() {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
 
+    var eatenState = { devoured: false };
+
     var newBurger = {
-      burger_name: $("#ca").val().trim(),
-      devoured: false
+      burger_name: $("#ca").val().trim()
     };
 
     // Send the POST request.
