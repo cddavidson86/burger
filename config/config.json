@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "tcbyterxtlirxow1",
-    "password": "svf7nd2kzfjr9jzj",
+    "password": "r51vjqwgjy1gzmvb",
     "database": "sux9jt616g13aquo",
     "host": "bmsyhziszmhf61g1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "port": 3306,
@@ -9,7 +9,7 @@
   },
   "test": {
     "username": "tcbyterxtlirxow1",
-    "password": "svf7nd2kzfjr9jzj",
+    "password": "r51vjqwgjy1gzmvb",
     "database": "sux9jt616g13aquo",
     "host": "bmsyhziszmhf61g1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "port": 3306,
@@ -17,7 +17,7 @@
   },
   "production": {
     "username": "tcbyterxtlirxow1",
-    "password": "svf7nd2kzfjr9jzj",
+    "password": "r51vjqwgjy1gzmvb",
     "database": "sux9jt616g13aquo",
     "host": "bmsyhziszmhf61g1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "port": 3306,
